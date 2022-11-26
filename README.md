@@ -28,7 +28,7 @@ This is a solution to the  [Intro component with sign up form challenge on Front
 ### Links
 
 - Solution URL: [Github](https://github.com/ramz04/Intro-Component-Signup/)
-- Live Site URL: [Netlify](https://huddle-landing-page-three-red.vercel.app/)
+- Live Site URL: [Vercel](https://intro-component-signup.vercel.app/)
 ### Built with
 
 - Semantic HTML5 markup
