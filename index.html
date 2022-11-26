@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap');
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red: 'hsl(0, 100%, 74%)',
+            green: 'hsl(154, 59%, 51%)',
+            blue: 'hsl(248, 32%, 49%)',
+            DarkBlue: 'hsl(249, 10%, 26%)',
+            GrayishBlue: 'hsl(246, 25%, 77%)',
+          },
+          fontFamily: {
+            poppins: ['Poppins','sans-serif']
+          },
+          backgroundImage:{
+            pic: "url('images/bg-intro-desktop.png')"
+          },
+          boxShadow: {
+            "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+          },
+        }
+      }
+    }
+  </script>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-pic bg-red bg-blend-multiply bg-cover md:bg-auto font-poppins px-4">
+
+  <main class="grid gap-y-5  md:grid-cols-2 md:w-[80vw] ">
+    <div class="text-center md:flex md:flex-col md:justify-center md:text-left">
+      <h2 class="text-white text-xl px-10 tracking-wider font-bold mb-3 md:text-5xl ">Learn to code by watching others</h2>
+      <p class="text-white text-sm px-4 md:text-base md:px-10  ">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="flex flex-col items-center md:items-center justify-center mb-2 ">
+      <button class="text-white text-center bg-blue text-sm px-3 py-4 rounded-lg shadow-2xl mb-4" style="box-shadow:0px 8px 0px rgba(0, 0, 0, 0.14688);"><p class="px-12 "><strong>Try it free 7 days</strong> then $20/mo. thereafter</p></button>
+      <div class=" bg-white px-8 py-4  shadow-2xl rounded-lg md:py-8  flex items-center justify-center" style="box-shadow:0px 8px 0px rgba(0, 0, 0, 0.14688);">
+        <form class="flex flex-col">
+          <input type="text" name="fname" required placeholder="First Name"  class="px-6 shadow-sm py-3 rounded-lg border-2 border-gray-200 caret-indigo-500 focus:border-b-2 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus:outline-none mb-3">
+          <input type="text" required name="lname" placeholder="Last Name"  class="px-6 py-3 shadow-sm rounded-lg border-2 border-gray-200 caret-indigo-500 focus:border-b-2 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus:outline-none mb-3">
+          <input type="email" required name="email" placeholder="Email Address"  class="px-6 py-3 shadow-sm rounded-lg border-2 border-gray-200 caret-indigo-500 focus:border-b-2 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus:outline-none mb-3">
+          <input type="password" required name="passwd" placeholder="Password"  class="px-6 py-3 shadow-sm rounded-lg border-2 border-gray-200 caret-indigo-500 focus:border-b-2 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus:outline-none mb-3">
+          <button type="submit" class="bg-green hover:bg-[#7eed9f] transition-all text-center text-white uppercase font-bold tracking-wide px-8 py-3 rounded-lg mb-3" style="box-shadow:0px 4px 0px rgba(3, 123, 47, 0.6);">Claim your free trial</button>
+          <p class="text-xs text-center text-GrayishBlue">By clicking the button, you are agreeing to our  <span class="text-red font-bold ">Terms and Services</span> </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Learn to code by watching others
+
+  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+
+  Try it free 7 days then $20/mo. thereafter
+
+  First Name 
+  Last Name 
+  Email Address
+  Password
+
+  Claim your free trial 
+
+  By clicking the button, you are agreeing to our Terms and Services -->
+  
+  <footer>
+    <!-- <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p> -->
+  </footer>
+</body>
+</html>
