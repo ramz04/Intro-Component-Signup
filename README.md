@@ -21,6 +21,7 @@ This is a solution to the  [Intro component with sign up form challenge on Front
 
 
 ### Screenshot
+![Screenshot (5)](https://user-images.githubusercontent.com/55752850/204106133-309ebddc-c534-46e3-aa54-f5471f221e96.png)
 
 
 
