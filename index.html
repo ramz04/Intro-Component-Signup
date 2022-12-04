@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -45,7 +48,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="flex justify-center items-center p-6  h-screen bg-pic bg-red bg-blend-multiply bg-cover md:bg-auto font-poppins">
+<body class="flex justify-center items-center animate__animated animate__zoomIn p-4   h-screen bg-pic bg-red bg-blend-multiply bg-cover md:bg-auto font-poppins">
 
   <main class="grid gap-y-5  md:grid-cols-2 md:w-[80vw] gap-x-4 ">
     <div class="text-center md:flex md:flex-col md:justify-center md:text-left">
@@ -53,9 +56,9 @@
       <p class="text-white text-sm px-4 md:text-base md:px-10  ">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
         but understanding how developers think is invaluable. </p>
     </div>
-    <div class="flex flex-col items-center md:items-center justify-center mb-2 ">
-      <button class="text-white text-center bg-blue text-sm px-3 md:px-4 py-4 rounded-lg shadow-2xl mb-4" style="box-shadow:0px 8px 0px rgba(0, 0, 0, 0.14688);"><p class="px-12 "><strong>Try it free 7 days</strong> then $20/mo. thereafter</p></button>
-      <div class=" bg-white px-8 py-4  shadow-2xl rounded-lg md:py-10 md:py-6   flex items-center justify-center" style="box-shadow:0px 8px 0px rgba(0, 0, 0, 0.14688);">
+    <div class="flex flex-col items-center md:items-center justify-center mb-2">
+      <button class="text-white text-center bg-blue text-sm px-2 md:px-4 py-3  rounded-lg shadow-2xl mb-4" style="box-shadow:0px 8px 0px rgba(0, 0, 0, 0.14688);"><p class="px-12 "><strong>Try it free 7 days</strong> then $20/mo. thereafter</p></button>
+      <div class=" bg-white px-6  py-4  shadow-2xl rounded-lg md:py-10 md:py-6   flex items-center justify-center" style="box-shadow:0px 8px 0px rgba(0, 0, 0, 0.14688);">
         <form class="flex flex-col md:gap-x-6 md:gap-y-2">
           <input type="text" name="fname" required placeholder="First Name"  class="px-6  shadow-sm py-3 rounded-lg border-2 border-gray-200 caret-indigo-500 focus:border-b-2 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus:outline-none mb-3">
           <input type="text" required name="lname" placeholder="Last Name"  class="px-6 py-3 shadow-sm rounded-lg border-2 border-gray-200 caret-indigo-500 focus:border-b-2 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus:outline-none mb-3">
